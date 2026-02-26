@@ -1,11 +1,11 @@
-import { MessageCircle } from 'lucide-react';
-import { Instagram } from 'lucide-react';
+import { MessageCircle, Instagram } from 'lucide-react';
+import logo from '@/assets/logo.png';
 
 const Footer = () => {
   return (
     <footer className="border-t border-border bg-card py-10">
       <div className="container flex flex-col items-center gap-6 px-4 text-center">
-        <h3 className="font-display text-xl font-bold text-gradient-gold">Josué Imports</h3>
+        <img src={logo} alt="Josué Imports" className="h-16 w-auto" />
         <div className="flex items-center gap-5">
           <a
             href="https://wa.me/SEUNUMEROAQUI"
