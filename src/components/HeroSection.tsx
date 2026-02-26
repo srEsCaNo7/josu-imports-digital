@@ -16,17 +16,17 @@ const HeroSection = () => {
         backgroundSize: '60px 60px',
       }} />
 
-      <div className="container relative z-10 flex min-h-screen flex-col items-center justify-center px-4 py-20">
-        {/* Logo text */}
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="mb-6"
-        >
-          <img src={logo} alt="Josué Imports" className="h-24 w-auto sm:h-32" />
-        </motion.div>
+      {/* Top navigation bar with logo */}
+      <motion.nav
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="relative z-20 flex items-center justify-center py-6"
+      >
+        <img src={logo} alt="Josué Imports" className="h-16 w-auto sm:h-20" />
+      </motion.nav>
 
+      <div className="container relative z-10 flex flex-col items-center justify-center px-4 pb-20 pt-4">
         {/* Hero Image */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
