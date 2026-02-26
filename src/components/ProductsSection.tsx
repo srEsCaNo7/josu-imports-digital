@@ -69,6 +69,10 @@ const ProductsSection = () => {
           <p className="mx-auto max-w-2xl text-muted-foreground">
             Trabalhamos com as melhores marcas e produtos do mercado de tecnologia. Confira nossas categorias.
           </p>
+          <div className="mt-6 inline-flex flex-wrap items-center justify-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-5 py-2.5">
+            <span className="text-sm font-semibold text-primary">📦 Também trabalhamos com atacado!</span>
+            <span className="text-sm text-muted-foreground">Preços especiais para revendedores e lojistas.</span>
+          </div>
         </motion.div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
