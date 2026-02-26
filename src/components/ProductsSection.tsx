@@ -1,36 +1,54 @@
 import { motion } from 'framer-motion';
-import { MessageCircle } from 'lucide-react';
+import { Smartphone, Watch, Headphones, Monitor, Battery, Cable, Speaker, Gamepad2 } from 'lucide-react';
 import catIphones from '@/assets/cat-iphones.png';
 import catAndroid from '@/assets/cat-android.png';
 import catWatches from '@/assets/cat-watches.png';
 import catAccessories from '@/assets/cat-accessories.png';
 
-const WHATSAPP_URL = "https://wa.me/SEUNUMEROAQUI?text=Olá! Vim pelo site da Josué Imports e gostaria de mais informações.";
-
-const products = [
+const catalogItems = [
   {
     title: 'iPhones',
-    description: 'Os modelos mais recentes com garantia e procedência.',
+    description: 'iPhone 15, 15 Pro, 15 Pro Max, iPhone 14, SE e toda a linha Apple. Modelos lacrados e com garantia.',
     image: catIphones,
-    icon: '📱',
+    icon: Smartphone,
   },
   {
     title: 'Smartphones Android',
-    description: 'Samsung, Xiaomi e mais com os melhores preços.',
+    description: 'Samsung Galaxy S24, A55, Xiaomi, Motorola, Poco e outras marcas líderes do mercado.',
     image: catAndroid,
-    icon: '📲',
+    icon: Monitor,
   },
   {
     title: 'Smartwatches',
-    description: 'Apple Watch, Galaxy Watch e mais opções premium.',
+    description: 'Apple Watch Series 9, Ultra 2, Galaxy Watch, Amazfit e pulseiras inteligentes.',
     image: catWatches,
-    icon: '⌚',
+    icon: Watch,
   },
   {
-    title: 'Eletrônicos e Acessórios',
-    description: 'Fones, carregadores e acessórios originais.',
+    title: 'Fones e Áudio',
+    description: 'AirPods Pro, Galaxy Buds, JBL, fones Bluetooth e caixas de som portáteis.',
     image: catAccessories,
-    icon: '🎧',
+    icon: Headphones,
+  },
+  {
+    title: 'Carregadores e Cabos',
+    description: 'Carregadores originais, turbo, MagSafe, cabos USB-C, Lightning e adaptadores.',
+    icon: Cable,
+  },
+  {
+    title: 'Caixas de Som',
+    description: 'JBL, Harman Kardon, Marshall e outras marcas com qualidade de som premium.',
+    icon: Speaker,
+  },
+  {
+    title: 'Power Banks',
+    description: 'Baterias portáteis de alta capacidade para manter seus dispositivos carregados.',
+    icon: Battery,
+  },
+  {
+    title: 'Acessórios Gamer',
+    description: 'Controles, headsets, suportes e acessórios para elevar sua experiência gamer.',
+    icon: Gamepad2,
   },
 ];
 
@@ -46,46 +64,49 @@ const ProductsSection = () => {
           className="mb-14 text-center"
         >
           <h2 className="mb-3 font-display text-3xl font-bold text-foreground sm:text-4xl">
-            Nossos <span className="text-gradient-gold">Produtos</span>
+            Nosso <span className="text-gradient-gold">Catálogo</span>
           </h2>
-          <p className="text-muted-foreground">Encontre o que há de melhor em tecnologia importada.</p>
+          <p className="mx-auto max-w-2xl text-muted-foreground">
+            Trabalhamos com as melhores marcas e produtos do mercado de tecnologia. Confira nossas categorias.
+          </p>
         </motion.div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {products.map((product, i) => (
-            <motion.div
-              key={product.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group relative overflow-hidden rounded-xl bg-card border border-border transition-all duration-300 hover:border-primary/50 hover:glow-gold-sm"
-            >
-              <div className="aspect-square overflow-hidden bg-secondary">
-                <img
-                  src={product.image}
-                  alt={product.title}
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  loading="lazy"
-                />
-              </div>
-              <div className="p-5">
-                <h3 className="mb-1 font-display text-lg font-semibold text-foreground">
-                  {product.icon} {product.title}
-                </h3>
-                <p className="mb-4 text-sm text-muted-foreground">{product.description}</p>
-                <a
-                  href={WHATSAPP_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-lg bg-whatsapp px-4 py-2 text-sm font-semibold text-foreground transition-all duration-300 hover:scale-105"
-                >
-                  <MessageCircle className="h-4 w-4" />
-                  Solicitar no WhatsApp
-                </a>
-              </div>
-            </motion.div>
-          ))}
+          {catalogItems.map((item, i) => {
+            const Icon = item.icon;
+            return (
+              <motion.div
+                key={item.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.08 }}
+                className="group relative overflow-hidden rounded-xl bg-card border border-border transition-all duration-300 hover:border-primary/50 hover:glow-gold-sm"
+              >
+                {item.image ? (
+                  <div className="aspect-[4/3] overflow-hidden bg-secondary">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      loading="lazy"
+                    />
+                  </div>
+                ) : (
+                  <div className="flex aspect-[4/3] items-center justify-center bg-secondary/50">
+                    <Icon className="h-16 w-16 text-primary/60 transition-colors duration-300 group-hover:text-primary" />
+                  </div>
+                )}
+                <div className="p-5">
+                  <h3 className="mb-1 flex items-center gap-2 font-display text-lg font-semibold text-foreground">
+                    <Icon className="h-5 w-5 text-primary" />
+                    {item.title}
+                  </h3>
+                  <p className="text-sm leading-relaxed text-muted-foreground">{item.description}</p>
+                </div>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>
