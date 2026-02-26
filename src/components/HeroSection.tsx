@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import WhatsAppButton from './WhatsAppButton';
 import heroDevices from '@/assets/hero-devices.png';
+import logo from '@/assets/logo.png';
 
 const HeroSection = () => {
   const scrollToProducts = () => {
@@ -23,9 +24,7 @@ const HeroSection = () => {
           transition={{ duration: 0.6 }}
           className="mb-6"
         >
-          <h2 className="font-display text-2xl font-bold tracking-widest text-gradient-gold uppercase">
-            Josué Imports
-          </h2>
+          <img src={logo} alt="Josué Imports" className="h-24 w-auto sm:h-32" />
         </motion.div>
 
         {/* Hero Image */}
