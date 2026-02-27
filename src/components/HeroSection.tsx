@@ -26,7 +26,7 @@ const HeroSection = () => {
         <img src={logo} alt="Josué Imports" className="h-16 w-auto sm:h-20" />
       </motion.nav>
 
-      <div className="container relative z-10 flex items-center justify-center px-4 pb-20 pt-4 gap-15 mt-40">
+      <div className="container relative z-10 flex flex-col items-center justify-center px-4 pb-20 pt-4 gap-20">
         
         <div className='flex flex-col items-center gap-2'> 
           {/* Headlines */}
@@ -34,7 +34,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold leading-tight mb-6"
+            className="mb-4 max-w-3xl text-center font-display text-3xl font-bold leading-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl"
           >
             Tecnologia Premium com os{' '}
             <span className="text-gradient-gold">Melhores Preços</span> do Mercado
@@ -44,7 +44,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="text-lg sm:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-10"
+            className="mb-10 max-w-xl text-center font-sans text-base text-muted-foreground sm:text-lg"
           >
             iPhones, Smartphones, Relógios e Eletrônicos Importados com Qualidade e Garantia.
           </motion.p>
@@ -72,7 +72,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mb-8 w-full max-w-2xl"
+          className="mb-8 w-full max-w-4xl"
         >
           <img
             src={heroDevices}
