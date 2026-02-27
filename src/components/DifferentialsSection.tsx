@@ -3,9 +3,9 @@ import { ShieldCheck, Truck, Lock, CreditCard, Phone } from 'lucide-react';
 
 const differentials = [
   { icon: ShieldCheck, title: 'Produtos Originais', description: 'Garantia de autenticidade em todos os produtos.' },
-  { icon: Truck, title: 'Envio Rápido', description: 'Entrega ágil para todo o Brasil.' },
+  { icon: Truck, title: 'Envio Rápido', description: 'Entrega ágil para todo SAD e DF' },
   { icon: Lock, title: 'Compra Segura', description: 'Transações protegidas e confiáveis.' },
-  { icon: CreditCard, title: 'Facilidade no Pagamento', description: 'Diversas formas de pagamento disponíveis.' },
+  { icon: CreditCard, title: 'Facilidade no Pagamento', description: 'Facilitamos seu pagamento! Diversas formas disponíveis e parcelamento em até 18x no cartão.' },
   { icon: Phone, title: 'Atendimento Personalizado', description: 'Suporte exclusivo via WhatsApp.' },
 ];
 
