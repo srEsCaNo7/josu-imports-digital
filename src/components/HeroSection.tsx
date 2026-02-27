@@ -26,7 +26,7 @@ const HeroSection = () => {
         <img src={logo} alt="Josué Imports" className="h-16 w-auto sm:h-20" />
       </motion.nav>
 
-      <div className="container relative z-10 flex flex-col items-center justify-center px-4 pb-20 pt-4 gap-20">
+      <div className="container relative z-10 flex flex-col items-center justify-center px-4 pb-20 pt-10">
         
         <div className='flex flex-col items-center gap-2'> 
           {/* Headlines */}
@@ -72,7 +72,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mb-8 w-full max-w-4xl"
+          className="mb-8 w-full max-w-3xl -mt-20"
         >
           <img
             src={heroDevices}
