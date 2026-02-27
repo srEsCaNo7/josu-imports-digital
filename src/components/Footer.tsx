@@ -8,7 +8,7 @@ const Footer = () => {
         <img src={logo} alt="Josué Imports" className="h-16 w-auto" />
         <div className="flex items-center gap-5">
           <a
-            href="https://wa.me/SEUNUMEROAQUI"
+            href="https://wa.me/message/XROMVFBHN76ZM1"
             target="_blank"
             rel="noopener noreferrer"
             className="flex h-10 w-10 items-center justify-center rounded-full bg-whatsapp transition-transform duration-200 hover:scale-110"
@@ -17,7 +17,7 @@ const Footer = () => {
             <MessageCircle className="h-5 w-5 text-foreground" />
           </a>
           <a
-            href="https://instagram.com/"
+            href="https://www.instagram.com/josueimportss/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex h-10 w-10 items-center justify-center rounded-full border border-border transition-all duration-200 hover:scale-110 hover:border-primary"
