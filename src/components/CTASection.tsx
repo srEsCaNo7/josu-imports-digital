@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { MessageCircle } from 'lucide-react';
 
-const WHATSAPP_URL = "https://wa.me/SEUNUMEROAQUI?text=Olá! Vim pelo site da Josué Imports e gostaria de mais informações.";
+const WHATSAPP_URL = "https://wa.me/message/XROMVFBHN76ZM1?text=Olá! Vim pelo site da Josué Imports e gostaria de mais informações sobre seus produtos.";
 
 const CTASection = () => {
   return (
@@ -17,9 +17,6 @@ const CTASection = () => {
           <h2 className="mb-3 font-display text-3xl font-bold text-primary-foreground sm:text-4xl md:text-5xl">
             Garanta seu iPhone hoje mesmo!
           </h2>
-          <p className="mb-8 font-sans text-lg font-medium text-primary-foreground/80">
-            ⚡ Estoque limitado! Aproveite antes que acabe.
-          </p>
           <a
             href={WHATSAPP_URL}
             target="_blank"
