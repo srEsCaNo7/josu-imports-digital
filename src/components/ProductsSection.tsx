@@ -1,9 +1,14 @@
 import { motion } from 'framer-motion';
-import { Smartphone, Watch, Headphones, Monitor, Battery, Cable, Speaker, Gamepad2 } from 'lucide-react';
+import { Smartphone, Watch, Headphones, Monitor, Battery, Cable, Speaker, Gamepad2, Laptop } from 'lucide-react';
 import catIphones from '@/assets/cat-iphones.png';
 import catAndroid from '@/assets/cat-android.png';
 import catWatches from '@/assets/cat-watches.png';
 import catAccessories from '@/assets/cat-accessories.png';
+import catNotebooks from '@/assets/cat-notebooks.png';
+import catCaixas from '@/assets/cat-caixas.png';
+import catPowerBanks from '@/assets/cat-powerbanks.png';
+import catGamers from '@/assets/cat-gamers.png';
+
 
 const catalogItems = [
   {
@@ -31,23 +36,27 @@ const catalogItems = [
     icon: Headphones,
   },
   {
-    title: 'Carregadores e Cabos',
-    description: 'Carregadores originais, turbo, MagSafe, cabos USB-C, Lightning e adaptadores.',
-    icon: Cable,
+    title: 'Notebooks',
+    description: 'Notebooks de alto desempenho, modelos ultrafinos, gamers e profissionais.',
+    image: catNotebooks,
+    icon: Laptop,
   },
   {
     title: 'Caixas de Som',
     description: 'JBL, Harman Kardon, Marshall e outras marcas com qualidade de som premium.',
+    image: catCaixas,
     icon: Speaker,
   },
   {
     title: 'Power Banks',
     description: 'Baterias portáteis de alta capacidade para manter seus dispositivos carregados.',
+    image: catPowerBanks,
     icon: Battery,
   },
   {
     title: 'Acessórios Gamer',
     description: 'Controles, headsets, suportes e acessórios para elevar sua experiência gamer.',
+    image: catGamers,
     icon: Gamepad2,
   },
 ];
