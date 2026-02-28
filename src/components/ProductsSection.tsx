@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion';
 import { Smartphone, Watch, Headphones, Monitor, Battery, Cable, Speaker, Gamepad2, Laptop } from 'lucide-react';
-import catIphones from '@/assets/cat-iphones.png';
-import catAndroid from '@/assets/cat-android.png';
-import catWatches from '@/assets/cat-watches.png';
-import catAccessories from '@/assets/cat-accessories.png';
-import catNotebooks from '@/assets/cat-notebooks.png';
-import catCaixas from '@/assets/cat-caixas.png';
-import catPowerBanks from '@/assets/cat-powerbanks.png';
-import catGamers from '@/assets/cat-gamers.png';
+import catIphones from '@/assets/cat-iphones.webp';
+import catAndroid from '@/assets/cat-android.webp';
+import catWatches from '@/assets/cat-watches.webp';
+import catAccessories from '@/assets/cat-accessories.webp';
+import catNotebooks from '@/assets/cat-notebooks.webp';
+import catCaixas from '@/assets/cat-caixas.webp';
+import catPowerBanks from '@/assets/cat-powerbanks.webp';
+import catGamers from '@/assets/cat-gamers.webp';
 
 
 const catalogItems = [

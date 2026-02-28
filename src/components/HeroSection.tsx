@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import WhatsAppButton from './WhatsAppButton';
-import heroDevices from '@/assets/hero-devices.png';
-import logo from '@/assets/logo.png';
+import heroDevices from '@/assets/hero-devices.webp';
+import logo from '@/assets/logo.webp';
 import AnimatedShaderBackground from "@/components/ui/animated-shader-background";
 
 const HeroSection = () => {
