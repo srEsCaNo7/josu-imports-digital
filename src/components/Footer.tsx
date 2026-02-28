@@ -8,7 +8,7 @@ const Footer = () => {
         <img src={logo} alt="Josué Imports" className="h-16 w-auto" />
         <div className="flex items-center gap-5">
           <a
-            href="https://wa.me/message/XROMVFBHN76ZM1"
+            href="https://wa.me/556183740667?text=Olá! Vim pelo site do Josué Imports e gostaria de mais informações."
             target="_blank"
             rel="noopener noreferrer"
             className="flex h-10 w-10 items-center justify-center rounded-full bg-whatsapp transition-transform duration-200 hover:scale-110"

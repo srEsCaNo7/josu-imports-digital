@@ -5,7 +5,7 @@ const WHATSAPP_URL = "https://wa.me/message/XROMVFBHN76ZM1?text=Olá! Vim pelo s
 
 const CTASection = () => {
   return (
-    <section className="relative overflow-hidden py-20 sm:py-28">
+    <section className="relative overflow-hidden py-20 sm:py-28 rounded-lg lg:ml-40 lg:mr-40">
       <div className="absolute inset-0 bg-gradient-gold opacity-95" />
       <div className="container relative z-10 px-4 text-center">
         <motion.div

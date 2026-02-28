@@ -35,7 +35,13 @@ const testimonials = [
     image: "/public/feedback8.png",
   },
   {
-    image: "/public/feedback9.png",
+    image: "/public/feedback10.png",
+  },
+  {
+    image: "/public/feedback11.png",
+  },
+  {
+    image: "/public/feedback12.png",
   },
 ];
 
@@ -49,8 +55,8 @@ const TestimonialsSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl sm:text-4xl font-display font-bold mb-4">
-            O que nossos <span className="gold-text">clientes</span> dizem
+          <h2 className="mb-3 font-display text-3xl font-bold text-foreground sm:text-4xl">
+            O que nossos <span className="text-gradient-gold">clientes</span> dizem
           </h2>
         </motion.div>
 
@@ -68,7 +74,7 @@ const TestimonialsSection = () => {
             <CarouselContent className="-ml-4">
               {testimonials.map((t) => (
                 <CarouselItem
-                  key={t.name}
+      
                   className="pl-4 basis-full sm:basis-1/2 lg:basis-1/3"
                 >
                   <div className="glass rounded-xl overflow-hidden hover:border-primary/30 transition-all duration-300 h-full flex flex-col">
@@ -76,7 +82,6 @@ const TestimonialsSection = () => {
                       <div className="w-full">
                         <img
                           src={t.image}
-                          alt={`Feedback de ${t.name}`}
                           className="w-full object-contain"
                           loading="lazy"
                         />
