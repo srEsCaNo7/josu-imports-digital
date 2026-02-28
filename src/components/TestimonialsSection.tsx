@@ -11,37 +11,37 @@ import Autoplay from "embla-carousel-autoplay";
 
 const testimonials = [
   {
-    image: "/public/feedback1.png",
+    image: "/public/feedback1.webp",
   },
   {
-    image: "/public/feedback2.png",
+    image: "/public/feedback2.webp",
   },
   {
-    image: "/public/feedback3.png",
+    image: "/public/feedback3.webp",
   },
   {
-    image: "/public/feedback4.png",
+    image: "/public/feedback4.webp",
   },
   {
-    image: "/public/feedback5.png",
+    image: "/public/feedback5.webp",
   },
   {
-    image: "/public/feedback6.png",
+    image: "/public/feedback6.webp",
   },
   {
-    image: "/public/feedback7.png",
+    image: "/public/feedback7.webp",
   },
   {
-    image: "/public/feedback8.png",
+    image: "/public/feedback8.webp",
   },
   {
-    image: "/public/feedback10.png",
+    image: "/public/feedback10.webp",
   },
   {
-    image: "/public/feedback11.png",
+    image: "/public/feedback11.webp",
   },
   {
-    image: "/public/feedback12.png",
+    image: "/public/feedback12.webp",
   },
 ];
 
