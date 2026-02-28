@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import WhatsAppButton from './WhatsAppButton';
 import heroDevices from '@/assets/hero-devices.png';
 import logo from '@/assets/logo.png';
+import AnimatedShaderBackground from "@/components/ui/animated-shader-background";
 
 const HeroSection = () => {
   const scrollToProducts = () => {
@@ -10,6 +11,8 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen overflow-hidden bg-gradient-dark">
+      
+      <AnimatedShaderBackground />
       {/* Subtle grid texture */}
       <div className="absolute inset-0 opacity-5" style={{
         backgroundImage: 'linear-gradient(hsl(var(--gold) / 0.3) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--gold) / 0.3) 1px, transparent 1px)',
